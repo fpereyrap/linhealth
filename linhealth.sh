@@ -9,4 +9,4 @@ ipvar= ifconfig eth0 | grep "inet addr"
 echo "******************************"
 echo "          Hostname "
 echo "******************************"
-echo "      "$hostname
+echo "      "$HOSTNAME
