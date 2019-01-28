@@ -5,8 +5,16 @@ echo "Operating system : $(uname)"
 echo "******************************"
 echo "     eth0 Configuration "
 echo "******************************"
-ipvar= ifconfig eth0 | grep "inet addr"
+ifconfig eth0 | grep "inet addr"
 echo "******************************"
 echo "          Hostname "
 echo "******************************"
 echo "      "$HOSTNAME
+echo "***********************"
+echo "*** Network routing ***"
+echo "***********************"
+netstat -nr
+echo "**************************************"
+echo "*** Interface traffic information ***"
+echo "**************************************"
+netstat -i
