@@ -11,7 +11,7 @@ function host_info(){
 	echo "Hostname : $(hostname -s)"
 	echo "DNS domain : $(hostname -d)"
 	echo "Fully qualified domain name : $(hostname -f)"
-	echo "Network address (IP) :  $(hostname -i)"
+	echo "Network address (IP) :" ifconfig eth0 | grep "inet addr"
 	echo "DNS name servers (DNS IP) : ${dnsips}"
 }
 
