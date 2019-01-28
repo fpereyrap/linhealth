@@ -38,3 +38,19 @@ echo "***********************************"
 echo "*** Top 5 memory eating process ***"
 echo "***********************************"	
 ps auxf | sort -nr -k 4 | head -5
+echo "***********************************"
+echo "***         Disk Ussage         ***"
+echo "***********************************"	
+df -h
+echo "***********************************"
+echo "***        nodes info           ***"
+echo "***********************************"	
+kubectl get nodes -o wide
+echo "***********************************"
+echo "*** get pods + system pods      ***"
+echo "***********************************"	
+kubectl get pods --all-namespaces
+echo "***********************************"
+echo "***        get services         ***"
+echo "***********************************"	
+kubectl get svc -o wide
