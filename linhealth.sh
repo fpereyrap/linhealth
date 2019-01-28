@@ -15,4 +15,4 @@ function host_info(){
 	echo "DNS name servers (DNS IP) : ${dnsips}"
 }
 
-host_info ;;
+host_info ;
