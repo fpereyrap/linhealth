@@ -13,5 +13,6 @@ function host_info(){
 	echo "Fully qualified domain name : $(hostname -f)"
 	echo "Network address (IP) :  $(hostname -i)"
 	echo "DNS name servers (DNS IP) : ${dnsips}"
-	pause
 }
+
+host_info ;;
